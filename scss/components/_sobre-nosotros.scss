@@ -1,0 +1,56 @@
+@import "../base/variables";
+
+.container-sobre-nosotros {
+    background-color: $primary;
+    padding: 5em;
+
+    h2 {
+        display: flex;
+    justify-content: end;
+    font-size: 3em;
+    font-family: "Roboto";
+    margin-right: 2em;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-end;
+
+        p {    
+        width: 70%;
+        text-align: right;
+        color: black;
+        font-size: 1.2em;
+        font-family: "Roboto";
+        padding: 1em 3em;
+        }
+    }
+}
+
+.container-utilizamos-productos {
+    background-color: $secundary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+
+    div {
+        display: flex;
+        justify-content: start;
+        font-size: 40px;
+        font-family: "Roboto";
+    }
+
+    .img-marcas {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5em; 
+
+        .logo-marcas {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            max-height: 3em;
+        }
+    }
+}

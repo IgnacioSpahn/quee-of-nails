@@ -1,0 +1,93 @@
+@import "../base/variables";
+
+
+.container-contacto {
+    background-color: $secundary;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-family: "Roboto" sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    p{
+        font-family: "Roboto" sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    div{     
+        a{  display: flex;
+            gap: 1em;
+            text-decoration: none;
+
+            img{
+                width: auto;
+                height: 2em;
+            }
+
+            p { 
+                color: black;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                gap: 1.2em;
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        } 
+        
+        iframe {
+            border-radius: 10px;
+        }
+    }
+}
+
+.container-form {
+    display: flex;
+    justify-content: flex-end;
+
+    form {
+        background-color: white;
+        width: 30em;
+        margin: 2em;
+        padding: 2em;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-family: "Roboto" sans-serif;
+        display: flex;
+        flex-direction: column;
+        
+
+        label {
+            font-weight: 600;
+            color: darken($primary, 10%);
+            font-weight: 600;
+            
+        }
+        
+        input {
+            border: none;
+            background-color: white;
+            border-bottom: 2px solid $primary;
+            margin-bottom: 10px;
+            outline: none;
+        }
+
+        .btn-enviar {
+            background-color: $primary;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+    }
+}

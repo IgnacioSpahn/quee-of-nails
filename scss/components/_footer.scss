@@ -1,0 +1,102 @@
+@import "../base/variables";
+
+footer {
+    background-color: $terciary;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2em 0;
+
+        .container-redes {
+            display: flex;
+            flex-direction: column;
+            margin: 2em 1em 0 1em;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0 1em;
+                transition: all 0,2s;
+                opacity: 80%;
+                
+                :hover {
+                    transform: translateY(-5px);
+                    opacity: 100%;
+                    font-weight: 600;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    font-size: 1.2em;
+                }
+
+                img {
+                    width: 40px;
+                     display: flex;
+                    align-items: center;
+                    margin: 1em;
+                }
+                p {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .container-link {
+            ul {
+                li {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    text-align: center;  
+                    
+                    :hover{
+                            opacity: 100%;
+                            font-weight: 600;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-family: "Roboto", "sans-serif";
+                        font-size: 1.2em;
+                        color: black;
+                        opacity: 80%;
+                        text-align: center;
+                        margin-top: 1em;
+                        transition: all 0,2s;
+                    }  
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2em;
+        }
+    }
+}
+
+.text-copy {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+}

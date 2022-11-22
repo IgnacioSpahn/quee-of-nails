@@ -1,0 +1,34 @@
+@import "../base/variables";
+
+header {
+    background-color: $primary;
+    
+    nav {
+        
+        div {
+            display: flex;
+            justify-content: flex-end !important;
+
+            a {
+                img {
+                    color: white;
+                }        
+            }
+            div {
+                ul{
+                    li{
+                        font-size: 1.3em !important;
+                        font-weight: 400 !important;
+                        opacity: 85%;
+                        transition: all 2s;
+
+                        :hover {
+                            opacity: 100%;
+                            font-weight: 600 !important;
+                            }   
+                    }
+                }
+            }
+        }
+    }
+}

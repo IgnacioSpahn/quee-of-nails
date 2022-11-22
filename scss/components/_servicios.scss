@@ -1,0 +1,79 @@
+@import "../base/variables";
+
+.container-header-servicios {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/nails-servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex   ;
+    
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 7em;
+
+         h1 {
+            background-color: $primary;
+            display: flex;
+            padding: 0.5em 0.7em;
+            border-radius: 10px;
+            text-decoration: none;
+            list-style: none;
+            font-size: 4em;
+            font-family: "Roboto";
+            color: white;
+         }
+
+         p{
+            color: black;
+            font-size: 1.7em;
+            font-family: "Roboto";
+            padding: 0 10em 0 0;
+         }
+    }
+}
+
+
+.container-servicios {
+    background-color: $secundary;
+    padding: 5em;
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5em 20em;
+
+        div {
+            background-color: $terciary;
+            border-radius: 20px;
+            padding: 3em;
+            max-width: 496px;
+
+            h3{
+                display: flex;
+                text-align: center;
+                font-size: 3em;
+                font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: white;
+            }
+
+            img {
+                margin: 10px auto;
+                display: flex;
+                width: 25em;
+                border-radius: 50%;
+            }
+
+            .text-servicio {
+                font-size: 1.2em;
+                font-family: "Roboto", "Helvetica Neue", Helvetica;   
+            }
+        }
+    }
+}

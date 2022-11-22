@@ -1,0 +1,414 @@
+header {
+  background-color: #FFBCBC;
+}
+header nav div {
+  display: flex;
+  justify-content: flex-end !important;
+}
+header nav div a img {
+  color: white;
+}
+header nav div div ul li {
+  font-size: 1.3em !important;
+  font-weight: 400 !important;
+  opacity: 85%;
+  transition: all 2s;
+}
+header nav div div ul li :hover {
+  opacity: 100%;
+  font-weight: 600 !important;
+}
+
+footer {
+  background-color: #AAAAAA;
+}
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+footer nav .container-redes {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 1em 0 1em;
+}
+footer nav .container-redes div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 1em;
+  transition: all 0, 2s;
+  opacity: 80%;
+}
+footer nav .container-redes div :hover {
+  transform: translateY(-5px);
+  opacity: 100%;
+  font-weight: 600;
+}
+footer nav .container-redes div a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2em;
+}
+footer nav .container-redes div img {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+footer nav .container-redes div p {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1em;
+}
+footer nav .container-link ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+footer nav .container-link ul li :hover {
+  opacity: 100%;
+  font-weight: 600;
+}
+footer nav .container-link ul li a {
+  text-decoration: none;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.2em;
+  color: black;
+  opacity: 80%;
+  text-align: center;
+  margin-top: 1em;
+  transition: all 0, 2s;
+}
+footer nav .copyright {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.text-copy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1em;
+  text-align: center;
+}
+
+.container-bg-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/nails-inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.container-bg-inicio div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 3em 0 5em;
+}
+.container-bg-inicio div h1 {
+  background-color: #FFBCBC;
+  margin: 40px;
+  display: flex;
+  padding: 0.5em 0.7em;
+  border-radius: 10px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 4em;
+  font-family: "Roboto";
+  color: white;
+}
+.container-bg-inicio div p {
+  color: black;
+  font-size: 1.7em;
+  font-family: "Roboto";
+  padding: 0 2em;
+}
+
+.container-sobre-nosotros {
+  background-color: #FFBCBC;
+  padding: 5em;
+}
+.container-sobre-nosotros h2 {
+  display: flex;
+  justify-content: end;
+  font-size: 3em;
+  font-family: "Roboto";
+  margin-right: 2em;
+}
+.container-sobre-nosotros div {
+  display: flex;
+  justify-content: flex-end;
+}
+.container-sobre-nosotros div p {
+  width: 70%;
+  text-align: right;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Roboto";
+  padding: 1em 3em;
+}
+
+.container-utilizamos-productos {
+  background-color: #FFE2E2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+}
+.container-utilizamos-productos div {
+  display: flex;
+  justify-content: start;
+  font-size: 40px;
+  font-family: "Roboto";
+}
+.container-utilizamos-productos .img-marcas {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+.container-utilizamos-productos .img-marcas .logo-marcas {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-height: 3em;
+}
+
+.container-header-servicios {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/nails-servicios.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.container-header-servicios div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7em;
+}
+.container-header-servicios div h1 {
+  background-color: #FFBCBC;
+  display: flex;
+  padding: 0.5em 0.7em;
+  border-radius: 10px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 4em;
+  font-family: "Roboto";
+  color: white;
+}
+.container-header-servicios div p {
+  color: black;
+  font-size: 1.7em;
+  font-family: "Roboto";
+  padding: 0 10em 0 0;
+}
+
+.container-servicios {
+  background-color: #FFE2E2;
+  padding: 5em;
+}
+.container-servicios div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em 20em;
+}
+.container-servicios div div {
+  background-color: #AAAAAA;
+  border-radius: 20px;
+  padding: 3em;
+  max-width: 496px;
+}
+.container-servicios div div h3 {
+  display: flex;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.container-servicios div div img {
+  margin: 10px auto;
+  display: flex;
+  width: 25em;
+  border-radius: 50%;
+}
+.container-servicios div div .text-servicio {
+  font-size: 1.2em;
+  font-family: "Roboto", "Helvetica Neue", Helvetica;
+}
+
+.container-header-promos {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/fondo-promo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.container-header-promos div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7em;
+}
+.container-header-promos div h1 {
+  background-color: #FFBCBC;
+  display: flex;
+  padding: 0.5em 0.7em;
+  border-radius: 10px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 4em;
+  font-family: "Roboto";
+  color: white;
+}
+.container-header-promos div p {
+  color: black;
+  font-size: 1.7em;
+  font-family: "Roboto";
+  padding: 0 10em 0 0;
+}
+
+.container-promos {
+  background-color: #FFE2E2;
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-promos div {
+  width: 80%;
+  padding: 1em;
+}
+.container-promos div img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container-promos div h3 {
+  font-family: "Roboto" "Montserrat";
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50%;
+  margin: 0, 1em;
+}
+.container-promos div p {
+  font-family: "Roboto" "Montserrat";
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 2em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50%;
+  margin: 0, 1em;
+}
+
+.container-contacto {
+  background-color: #FFE2E2;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contacto h2 {
+  font-family: "Roboto" sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+}
+.contacto p {
+  font-family: "Roboto" sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.contacto div a {
+  display: flex;
+  gap: 1em;
+  text-decoration: none;
+}
+.contacto div a img {
+  width: auto;
+  height: 2em;
+}
+.contacto div a p {
+  color: black;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.contacto div iframe {
+  border-radius: 10px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: flex-end;
+}
+.container-form form {
+  background-color: white;
+  width: 30em;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: "Roboto" sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.container-form form label {
+  font-weight: 600;
+  color: #ff8989;
+  font-weight: 600;
+}
+.container-form form input {
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid #FFBCBC;
+  margin-bottom: 10px;
+  outline: none;
+}
+.container-form form .btn-enviar {
+  background-color: #FFBCBC;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
