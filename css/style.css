@@ -1,6 +1,9 @@
 header {
   background-color: #FFBCBC;
 }
+header .logo-nav {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(102%) contrast(100%);
+}
 header nav div {
   display: flex;
   justify-content: flex-end !important;
@@ -27,6 +30,11 @@ footer nav {
   justify-content: space-around;
   align-items: center;
   padding: 2em 0;
+}
+footer nav a .logo {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(70%) saturate(7494%) hue-rotate(318deg) brightness(103%) contrast(100%);
+  width: 100%;
+  height: 15em;
 }
 footer nav .container-redes {
   display: flex;
@@ -106,6 +114,34 @@ footer nav .copyright {
   text-align: center;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .navbar-footer {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar-footer {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+  .container-redes div a img {
+    width: 1.5em !important;
+  }
+  .container-redes div a p {
+    font-size: 1em !important;
+  }
+  .container-link ul li a {
+    font-size: 1.2em !important;
+    margin-top: 1em;
+  }
+}
 .container-bg-inicio {
   display: flex;
   flex-direction: column;
@@ -144,6 +180,38 @@ footer nav .copyright {
   padding: 0 2em;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .container-bg-inicio div {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .container-bg-inicio div h1 {
+    margin: 1em;
+    justify-content: center;
+  }
+  .container-bg-inicio div p {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-bg-inicio div {
+    padding: 0;
+  }
+  .container-bg-inicio div h1 {
+    font-size: 2.5em;
+    margin: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+  }
+  .container-bg-inicio div p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
 .container-sobre-nosotros {
   background-color: #FFBCBC;
   padding: 5em;
@@ -193,6 +261,77 @@ footer nav .copyright {
   max-height: 3em;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .container-sobre-nosotros h2 {
+    margin: 0;
+    justify-content: center;
+  }
+  .container-sobre-nosotros div p {
+    width: 100%;
+    text-align: center;
+  }
+  .container-utilizamos-productos {
+    background-color: #FFE2E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2em 0em;
+  }
+  .img-marcas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-sobre-nosotros {
+    padding: 2.5em;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    margin: 0;
+  }
+  .container-sobre-nosotros h2 {
+    margin: 0 !important;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.9em !important;
+    font-weight: 600;
+  }
+  .container-sobre-nosotros div p {
+    width: 100% !important;
+    text-align: start !important;
+    font-size: 1em !important;
+    padding: 1.5em 0 !important;
+  }
+  .container-utilizamos-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2em 0em;
+  }
+  .container-utilizamos-productos div h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .img-marcas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .logo-marcas {
+    width: 100%;
+    height: 2em;
+    border-radius: 20px;
+  }
+}
 .container-header-servicios {
   width: 100%;
   height: 100vh;
@@ -254,6 +393,7 @@ footer nav .copyright {
   margin: 10px auto;
   display: flex;
   width: 25em;
+  height: 25em;
   border-radius: 50%;
 }
 .container-servicios div div .text-servicio {
@@ -261,6 +401,74 @@ footer nav .copyright {
   font-family: "Roboto", "Helvetica Neue", Helvetica;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .container-header-servicios div {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .container-header-servicios div h1 {
+    font-size: 3em;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-header-servicios div p {
+    font-size: 1.4em;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    padding: 0;
+  }
+  .container-product div img {
+    width: 20em !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-header-servicios div {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-header-servicios div h1 {
+    font-size: 2.5em;
+    margin: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+  }
+  .container-header-servicios div p {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .container-servicios {
+    padding: 2em 0.5em 2em 0.5em;
+  }
+  .container-servicios div div {
+    padding: 0;
+  }
+  .container-servicios div div h3 {
+    font-size: 2em;
+    padding: 0.2em;
+  }
+  .container-servicios div div img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0.1em;
+    padding: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-servicios div div p {
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+  }
+}
 .container-header-promos {
   width: 100%;
   height: 100vh;
@@ -333,6 +541,59 @@ footer nav .copyright {
   margin: 0, 1em;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .container-header-promos div {
+    align-items: center;
+  }
+  .container-header-promos div h1 {
+    font-size: 3em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-header-promos div p {
+    font-size: 1.4em;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    padding: 0;
+  }
+  .container-promos div {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-header-promos div {
+    align-items: center;
+  }
+  .container-header-promos div h1 {
+    font-size: 2.5em;
+    padding: 0.3em;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-header-promos div p {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .container-promos {
+    padding: 0;
+  }
+  .container-promos div {
+    width: 100%;
+  }
+  .container-promos div h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .container-promos div p {
+    display: none;
+  }
+}
 .container-contacto {
   background-color: #FFE2E2;
   display: flex;
@@ -396,6 +657,9 @@ footer nav .copyright {
   color: #ff8989;
   font-weight: 600;
 }
+.container-form form textarea {
+  border: 1px solid #FFBCBC;
+}
 .container-form form input {
   border: none;
   background-color: white;
@@ -409,6 +673,69 @@ footer nav .copyright {
   font-weight: 600;
   font-size: 1.2em;
   margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .contacto {
+    align-items: center;
+  }
+  .contacto h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto p {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto .container-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container-contacto {
+    flex-direction: column;
+  }
+  .container-contacto .container-form {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container-contacto {
+    padding: 0.5em;
+  }
+  .contacto {
+    align-items: center;
+  }
+  .contacto h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+  }
+  .contacto p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+  .contacto .container-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contacto iframe {
+    height: 25em;
+    width: 100%;
+  }
+  .container-contacto {
+    flex-direction: column;
+  }
+  .container-contacto .container-form {
+    justify-content: center;
+  }
+  .container-contacto .container-form form {
+    width: 100%;
+    padding: 1em;
+    margin: 2em 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

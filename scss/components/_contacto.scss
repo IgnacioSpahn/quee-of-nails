@@ -73,6 +73,10 @@
             font-weight: 600;
             
         }
+
+        textarea{
+            border: 1px solid $primary;
+        }
         
         input {
             border: none;
@@ -88,6 +92,85 @@
             font-weight: 600;
             font-size: 1.2em;
             margin-top: 0.5em;
+
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 980px){
+
+    .contacto{
+        align-items: center;
+
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+        }
+        .container-links{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+    }
+
+    .container-contacto {
+        flex-direction: column;
+
+        .container-form{
+            justify-content: center;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .container-contacto{
+        padding: 0.5em;
+    }
+
+    .contacto{
+        align-items: center;
+
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5em;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        .container-links{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+
+        iframe{
+            height: 25em;
+            width: 100%;
+        }
+    }
+
+    .container-contacto {
+        flex-direction: column;
+
+        .container-form{
+            justify-content: center;
+
+            form{
+                width: 100%;
+                padding: 1em;
+                margin: 2em 0;
+            }
         }
     }
 }
